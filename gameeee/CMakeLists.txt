@@ -33,11 +33,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         enemyplane.h enemyplane.cpp
         bomb.h bomb.cpp
         res.qrc
-        game.h game.cpp
-        hp.h hp.cpp
-        gameover.h gameover.cpp
-        socre.h socre.cpp
-
 
     )
 # Define target properties for Android with Qt 6 as:

@@ -1,5 +1,6 @@
 #include "enemyplane.h"
 #include "config.h"
+
 EnemyPlane::EnemyPlane()
 {
     //敌机资源加载
@@ -13,7 +14,7 @@ EnemyPlane::EnemyPlane()
     m_Free = true;
 
     //敌机速度
-    //m_Speed = ENEMY_SPEED1;
+    m_Speed = ENEMY_SPEED;
 
     //敌机矩形
     m_Rect.setWidth(m_enemy.width());
