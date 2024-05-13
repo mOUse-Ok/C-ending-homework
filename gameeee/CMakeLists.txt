@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
-
+find_package(Qt6 REQUIRED COMPONENTS Core GUI Multimedia)
 set(TS_FILES gameeee_zh_CN.ts)
 
 set(PROJECT_SOURCES
@@ -21,7 +21,6 @@ set(PROJECT_SOURCES
         mainscene.ui
         ${TS_FILES}
 )
-
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(gameeee
         MANUAL_FINALIZATION
@@ -34,6 +33,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         enemyplane.h enemyplane.cpp
         bomb.h bomb.cpp
         res.qrc
+        game.h game.cpp
+        hp.h hp.cpp
+        gameover.h gameover.cpp
+        socre.h socre.cpp
+
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -59,7 +63,8 @@ else()
 endif()
 
 target_link_libraries(gameeee PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
+target_link_libraries(gameeee PRIVATE Qt6::Core)
+target_link_libraries(gameeee PRIVATE Qt6::Multimedia)
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.

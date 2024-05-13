@@ -1,9 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/app.ico</file>
         <file>res/ball.png</file>
-        <file>res/bg.wav</file>
-        <file>res/bomb.wav</file>
         <file>res/bomb-1.png</file>
         <file>res/bomb-2.png</file>
         <file>res/bomb-3.png</file>
@@ -11,39 +8,25 @@
         <file>res/bomb-5.png</file>
         <file>res/bomb-6.png</file>
         <file>res/bomb-7.png</file>
-        <file>res/bullet_1.png</file>
-        <file>res/bullet_2.png</file>
-        <file>res/bullet_3.png</file>
-        <file>res/bullet_4.png</file>
-        <file>res/bullet_5.png</file>
-        <file>res/bullet_6.png</file>
-        <file>res/bullet_7.png</file>
-        <file>res/bullet_8.png</file>
-        <file>res/bullet_9.png</file>
-        <file>res/bullet_10.png</file>
-        <file>res/bullet_11.png</file>
-        <file>res/bullet_12.png</file>
-        <file>res/bullet_13.png</file>
-        <file>res/bullet_14.png</file>
-        <file>res/game.ico</file>
-        <file>res/hero.png</file>
-        <file>res/hero_bullet_7.png</file>
-        <file>res/hero2.png</file>
-        <file>res/img_bg_level_1.jpg</file>
-        <file>res/img_bg_level_2.jpg</file>
-        <file>res/img_bg_level_3.jpg</file>
-        <file>res/img_bg_level_4.jpg</file>
-        <file>res/img_bg_level_5.jpg</file>
-        <file>res/img-plane_1.png</file>
-        <file>res/img-plane_2.png</file>
-        <file>res/img-plane_3.png</file>
-        <file>res/img-plane_4.png</file>
-        <file>res/img-plane_5.png</file>
-        <file>res/img-plane_6.png</file>
-        <file>res/img-plane_7.png</file>
         <file>res/kun.png</file>
         <file>res/man.png</file>
         <file>res/154.jpeg</file>
         <file>res/R-C.jpg</file>
+        <file>res/R-C1.jpg</file>
+        <file>res/kunkun1.png</file>
+        <file>res/HP.png</file>
+        <file>res/sign.jpg</file>
+        <file>res/sign1.jpg</file>
+        <file>res/startgame.png</file>
+        <file>res/gogame.png</file>
+        <file>res/socre.png</file>
+        <file>res/kobebye.jpg</file>
+        <file>res/kobehello.jpg</file>
+        <file>res/close.png</file>
+        <file>res/kobebye1.jpg</file>
+        <file>res/mambaout.MP3</file>
+        <file>res/man.MP3</file>
+        <file>res/seeuagian.MP3</file>
+        <file>res/whatcanisay.MP3</file>
     </qresource>
 </RCC>
