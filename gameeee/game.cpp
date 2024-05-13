@@ -48,7 +48,7 @@ void game::playGame()
     QAudioOutput *audioOutput=new  QAudioOutput(this);
     QMediaPlayer *startwhistle=new QMediaPlayer(this);  //创建一个音乐播放
     startwhistle->setAudioOutput(audioOutput );
-    audioOutput->setVolume(0.3);
+    audioOutput->setVolume(0.02);
     startwhistle->setSource(QUrl("qrc:/res/seeuagian.MP3"));
     startwhistle->play();
 
@@ -280,7 +280,7 @@ void game::collisionDetection()
                 QAudioOutput *audioOutput=new  QAudioOutput(this);
                 QMediaPlayer *startwhistle=new QMediaPlayer(this);  //创建一个音乐播放
                 startwhistle->setAudioOutput(audioOutput );
-                audioOutput->setVolume(1.6);
+                audioOutput->setVolume(0.08);
                 startwhistle->setSource(QUrl("qrc:/res/man.MP3"));
                 startwhistle->play();
                 m_enemys[i].m_Free = true;
@@ -321,7 +321,7 @@ void game::Lose_HP(){
             QAudioOutput *audioOutput=new  QAudioOutput(this);
             QMediaPlayer *startwhistle=new QMediaPlayer(this);  //创建一个音乐播放
             startwhistle->setAudioOutput(audioOutput );
-            audioOutput->setVolume(1.6);
+            audioOutput->setVolume(0.08);
             startwhistle->setSource(QUrl("qrc:/res/whatcanisay.MP3"));
             startwhistle->play();
         }

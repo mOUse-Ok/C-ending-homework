@@ -17,6 +17,8 @@ public:
     void over();
     QMediaPlayer *endSound;
     void checkSoundEnded();
+    void checkSoundEnded_re();
+   // game rego;
 signals:
 };
 
